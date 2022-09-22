@@ -1,0 +1,7 @@
+<mat-tab-group mat-stretch-tabs>
+  <ng-container *ngFor="let tab of tabs">
+    <mat-tab [label]="tab.label">
+      <app-main-page-tab [tab]="tab"></app-main-page-tab>
+    </mat-tab>
+  </ng-container>
+</mat-tab-group>
